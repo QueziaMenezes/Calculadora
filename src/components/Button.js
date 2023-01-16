@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         borderWidth: 1,
         borderColor: '#888',
-        borderRadius: 3,
+        // borderRadius: 5,
     },
     buttonOperation: {
         color: '#fff',
