@@ -13,6 +13,8 @@ const initialState = {
 export default class App extends Component {
   state = { ...initialState }
   adcDigito = n => {
+
+
     const clearDisplay = this.state.displayValue === '0'
       || this.state.clearDisplay
 
@@ -54,12 +56,12 @@ export default class App extends Component {
         displayValue: `${values[0]}`,
         operacao: equals ? null : operacao,
         current: equals ? 0 : 1,
-        clearDisplay: true,
+        clearDisplay: !equals,
         values,
       })
     }
-  }
 
+  }
   render() {
     return (
       <View style={styles.container}>
